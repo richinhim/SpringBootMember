@@ -2,6 +2,7 @@ package com.codingrecipe.member.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
 public class MemberController {
@@ -12,5 +13,9 @@ public class MemberController {
         return "save";
     }
 
-
+    @PostMapping("/member/save")
+    public String save() {
+        System.out.println("MemberController.save");
+        return  null;
+    }
 }
