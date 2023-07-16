@@ -1,0 +1,9 @@
+*세션(session)
+-로그인 정보 유지
+
+*thymeleaf
+
+
+*Parameter 0 of constructor in com.codingrecipe.member.service.MemberService required a bean of type 'com.codingrecipe.member.repository.MemberRepository' that could not be found.
+
+*https://goddaehee.tistory.com/283

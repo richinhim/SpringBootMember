@@ -5,6 +5,25 @@ https://github.com/codingrecipe1/member_new
 
 https://velog.io/@codingrecipe
 
+
+/*---------------------------------------------
+-- 오브젝트명: board.sa_member
+-- 생성일자 : 2022-04-12 17:48:07.0
+-- 상태: VALID
+---------------------------------------------*/
+CREATE TABLE `board`.`member_table`
+(
+    `id`    int(20)      NOT NULL AUTO_INCREMENT,
+    `memberEmail`    varchar(20)  CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+    `memberPassword`    varchar(10)  CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+    `memberName`  varchar(20)  CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+    PRIMARY KEY (`id`)
+)
+ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci ROW_FORMAT=Dynamic AUTO_INCREMENT=4;
+
+
+//////////////////////////////////////////////
+
 *[ React + Spring boot + MySQL + AWS를 사용한 블로그 프로젝트 ] - 8. Back end 로그인 기능 구현 및 JWT 토큰 생성[Jiraynor Programming]
 https://youtu.be/iSUH5TvIaFM
 
@@ -27,3 +46,17 @@ https://youtu.be/d6suykcsNeY
 *axios를 이용하여 서버에서 데이터 가져오기
 https://youtu.be/JAMOiluaUTc
 
+*django : 제로부터 시작하는 인스타그램. - 장고로 인스타그램을 따라 만들어보면서 웹서비스를 만들어 보자~!
+https://youtu.be/M8UPyeF5DfM?list=PLHQvFs5CMVoQd-N0MeIOfexq91Tuyv1vZ
+
+
+*Spring Boot으로 웹 출시까지 #1. 환경 설정[코딩의신 1/15]
+https://youtu.be/FYkn9KOfkx0?list=PLPtc9qD1979DG675XufGs0-gBeb2mrona
+
+
+*스프링 부트 프로젝트 생성 및 구조 살펴보기 [ 스프링 부트 (Spring Boot) 강의 ] - 어라운드 허브 스튜디오
+https://youtu.be/rHJgMRimJ4Y?list=PLlTylS8uB2fBOi6uzvMpojFrNe7sRmlzU
+
+
+*Vue 3 강의 - 스프링부트 REST API를 이용하여 쇼핑몰 만들기(JPA, MariaDB, JWT)- 아프리카 도서관
+https://youtu.be/htYYSszfzv0
