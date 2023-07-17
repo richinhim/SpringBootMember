@@ -1,0 +1,66 @@
+*[스프링부트 회원 프로젝트] 05_회원가입_DB 연동하기(springboot, mysql, jpa, login)
+https://youtu.be/D0censomYqA
+
+
+/*---------------------------------------------
+-- 오브젝트명: board.sa_member
+-- 생성일자 : 2022-04-12 17:48:07.0
+-- 상태: VALID
+---------------------------------------------*/
+CREATE TABLE `board`.`member_table`
+(
+    `id`    int(20)      NOT NULL AUTO_INCREMENT,
+    `memberEmail`    varchar(20)  CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+    `memberPassword`    varchar(10)  CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+    `memberName`  varchar(20)  CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+    PRIMARY KEY (`id`)
+)
+ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci ROW_FORMAT=Dynamic AUTO_INCREMENT=4;
+
+
+*객체 주입 방식
+- 생성자 주입 방식
+
+[Spring Boot] MariaDB + JPA 연동하기
+https://wecandev.tistory.com/71
+https://gofnrk.tistory.com/20
+https://parksrazor.tistory.com/210
+
+create database db_codingrecipe;
+create user user_codingrecipe@localhost IDENTIFIED by '1234';
+grant all PRIVILEGES on db_codingrecipe.* to user_codingrecipe@localhost;
+
+
+*[에러 해결] Parameter 0 of constructor in {###} required a bean of type '{###}' that could not be found. 오류 해결
+https://charactermail.tistory.com/487
+
+
+*Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+ Reason: Failed to determine a suitable driver class
+
+
+ Action:
+
+ Consider the following:
+ 	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+ 	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+https://velog.io/@als904204/Spring-Boot-DB-%EC%97%90%EB%9F%AC-Failed-to-determine-a-suitable-driver-class
+
+
+DBMS: MariaDB (ver. 10.5.10-MariaDB)
+Case sensitivity: plain=lower, delimited=lower
+Driver: MariaDB Connector/J (ver. 3.0.7, JDBC4.2)
+Ping: 62 ms
+SSL: no
+
+*
+https://goddaehee.tistory.com/283
+
+https://growingarchive.tistory.com/253
+
+* driver-class-name: com.mysql.cj.jdbc.Driver 오류
+https://velog.io/@letgodchan0/Spring-boot-Mysql-%EC%97%B0%EB%8F%99Gradle
+
+https://whitepaek.tistory.com/18

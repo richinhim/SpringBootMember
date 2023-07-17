@@ -1,0 +1,13 @@
+{
+  "properties": [
+    {
+      "name": "server.spring.Logging.level.org.hibernate.SQL",
+      "type": "java.lang.String",
+      "description": "Description for server.spring.Logging.level.org.hibernate.SQL."
+    },
+    {
+      "name": "server.spring.datasource.driver-class-name",
+      "type": "java.lang.String",
+      "description": "Description for server.spring.datasource.driver-class-name."
+    }
+  ] }

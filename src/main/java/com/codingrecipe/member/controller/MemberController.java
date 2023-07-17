@@ -25,7 +25,7 @@ public class MemberController {
         return "save";
     }
 
-
+    /*
     @PostMapping("/member/save")
     public String save(@RequestParam("memberEmail") String memberEmail,
                        @RequestParam("memberPassword") String memberPassword,
@@ -35,16 +35,18 @@ public class MemberController {
 
         return  "index";
     }
+    */
 
-    /*
     @PostMapping("/member/save")
     public String save(@ModelAttribute MemberDTO memberDTO) {
         System.out.println("MemberController.save");
         System.out.println("memberDTO = " + memberDTO);
+
+        memberService.save(memberDTO);
+
         return  "login";
     }
 
-     */
 
     @GetMapping("/member/login")
     public String loginForm(){

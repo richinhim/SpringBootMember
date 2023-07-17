@@ -7,3 +7,10 @@
 *Parameter 0 of constructor in com.codingrecipe.member.service.MemberService required a bean of type 'com.codingrecipe.member.repository.MemberRepository' that could not be found.
 
 *https://goddaehee.tistory.com/283
+
+*JPA동작 방식
+https://velog.io/@dev_zzame/JPA-%EB%8F%99%EC%9E%91-%EB%B0%A9%EC%8B%9D
+
+
+*How to connect Spring boot to MariaDB using jpa
+https://youtu.be/Pf_nw4NWQLg

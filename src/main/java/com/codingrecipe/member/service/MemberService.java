@@ -15,7 +15,7 @@ import java.util.Optional;
 @RequiredArgsConstructor
 public class MemberService {
 
-    private MemberRepository memberRepository;
+    private final MemberRepository memberRepository;
 
     public void save(MemberDTO memberDTO) {
         // 1. dto -> entity 변환
