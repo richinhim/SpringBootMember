@@ -1,8 +1,9 @@
 # SpringBootMember
-SpringBootMember
-SpringBoot
-MariaDB
-thymeleaf
-JPA
-jQuery
+SpringBootMember <br>
+
+SpringBoot <br>
+MariaDB    <br> 
+thymeleaf  <br>
+JPA        <br>
+jQuery     <br>
 LomBok
