@@ -122,5 +122,11 @@ public class MemberController {
         session.invalidate();
         return "index";
     }
+    
+    @PostMapping("/member/email-check")
+    public @ResponseBody String emailCheck(@RequestParam("memberEmail") String memberEmail){
+        System.out.println("memberEmail = " + memberEmail);
+        return "체크완료";
+    }
 
 }

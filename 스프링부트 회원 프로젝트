@@ -71,7 +71,9 @@ https://youtu.be/W-XKXKLvV_8
 *세션 정보
 
 
-*tue,july,18,2023
+** tue,july,18,2023
+/////////////////////
+
 *[스프링부트 회원 프로젝트] 11_로그아웃 & 마무리(springboot, mysql, jpa, login)
 https://youtu.be/Hds86bMGqDY
 
@@ -96,6 +98,20 @@ https://youtu.be/Hds86bMGqDY?list=PLV9zd3otBRt5ANIjawvd-el3QU594wyx7
 
 *로그아웃
 - 세션에서 내 정보를 뺀다.
+
+*[스프링부트(SpringBoot) 회원 프로젝트(Member Project)] 12_ajax 이메일 중복체크(springboot, mysql, jpa, login, ajax)
+https://youtu.be/j3LkMxW_d1E?list=PLV9zd3otBRt5ANIjawvd-el3QU594wyx7
+
+*추가 기능
+- ajax를 활용한 이메일(아이디) 중복체크 하기
+- 비동기식 요청
+- axios
+
+*[스프링부트(SpringBoot) 회원 프로젝트] 12_ajax 이메일 중복체크_입력한 이메일 서버로 보내기(springboot, mysql, jpa, login)
+https://youtu.be/u0vTKR57sCw?list=PLV9zd3otBRt5ANIjawvd-el3QU594wyx7
+
+
+
 
 
 
