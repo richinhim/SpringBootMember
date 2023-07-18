@@ -70,12 +70,6 @@ public class MemberController {
         }
     }
 
-    @GetMapping("/member/logout")
-    public String logout(HttpSession session) {
-        session.invalidate();
-        return "index";
-    }
-
     @GetMapping("/member/")
     public String findAll(Model model){
 
@@ -123,5 +117,10 @@ public class MemberController {
         return "redirect:/member/";
     }
 
+    @GetMapping("/member/logout")
+    public String logout(HttpSession session){
+        session.invalidate();
+        return "index";
+    }
 
 }
