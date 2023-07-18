@@ -58,17 +58,19 @@ public class MemberService {
         }
     }
 
-
-    public List<MemberDTO> findAll() {
+    public List<MemberDTO> findAll(){
         List<MemberEntity> memberEntityList = memberRepository.findAll();
         List<MemberDTO> memberDTOList = new ArrayList<>();
+
         for (MemberEntity memberEntity: memberEntityList) {
             memberDTOList.add(MemberDTO.toMemberDTO(memberEntity));
-//            MemberDTO memberDTO = MemberDTO.toMemberDTO(memberEntity);
-//            memberDTOList.add(memberDTO);
+
+            //MemberDTO memberDTO = MemberDTO.toMemberDTO(memberEntity);
+            //memberDTOList.add(memberDTO);
         }
         return memberDTOList;
     }
+
 
     public MemberDTO findById(Long id) {
         Optional<MemberEntity> optionalMemberEntity = memberRepository.findById(id);
