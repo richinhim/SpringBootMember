@@ -71,19 +71,23 @@ public class MemberService {
         return memberDTOList;
     }
 
-
-    public MemberDTO findById(Long id) {
+    public MemberDTO findById(Long id){
         Optional<MemberEntity> optionalMemberEntity = memberRepository.findById(id);
-        if (optionalMemberEntity.isPresent()) {
-//            MemberEntity memberEntity = optionalMemberEntity.get();
-//            MemberDTO memberDTO = MemberDTO.toMemberDTO(memberEntity);
-//            return memberDTO;
+
+        if(optionalMemberEntity.isPresent()){
+
+            //MemberEntity memberEntity = optionalMemberEntity.get();
+            //MemberDTO memberDTO = MemberDTO.toMemberDTO(memberEntity);
+            //return memberDTO;
+
             return MemberDTO.toMemberDTO(optionalMemberEntity.get());
-        } else {
-            return null;
+
+        }else{
+            return  null;
         }
 
     }
+
 
     public MemberDTO updateForm(String myEmail) {
         Optional<MemberEntity> optionalMemberEntity = memberRepository.findByMemberEmail(myEmail);
